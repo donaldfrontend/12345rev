@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - CSS Text:hover show image</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<head>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+  <p>
+    Hover to see a <span class="hiddentxt"><a href="https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg">banana</a></span><span class="hiddenimg"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg" width="250" /></span>.
+  </p>
+  <p>
+    It <span class="hiddentxt"><a href="https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg">disjoins</a></span><span class="hiddenimg"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg" width="250" /></span> the sentence when the image and text are next to each other in HTML.
+  </p>
+  <p>To fix this, position the image at the end of the <span class="hiddentxt"><a href = "https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg">element</a></span>, and use the ~ selector in the CSS.<span class="hiddenimg"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg" width="250" /></span>
+  </p>
+  <p>
+    Let's see if it works with <span class="hiddentxt" onmouseover="vidPlay()" onmouseout="vidPause()"><a href="https://mtc.cdn.vine.co/r/videos/ECBC329ACC1050514912117440512_1c6599f182f.4.6.16444000809832514200.mp4">videos</a></span>. (The video should play when it's displayed, but sometimes it takes a while to load.)
+    <span class="hiddenimg"><video id="video1" loop>
+      <source src="https://mtc.cdn.vine.co/r/videos/ECBC329ACC1050514912117440512_1c6599f182f.4.6.16444000809832514200.mp4" type="video/mp4">
+      </video></span>
+  </P>
+  <p>
+    Bonus round! I want to make it so you can click a word to toggle an image. This is not currently possible using just CSS, so we must bring in JavaScript, and particularly jQuery.</p><p> Click <span class = "hiddenclick" onclick = "toggleImage()">here</span> to show image.<br>
+  <span class="hiddenclickimg"><img src = "https://s-media-cache-ak0.pinimg.com/originals/22/74/8c/22748c9b9cc2c039aed206cab0247404.gif"/></span>
+  </p>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
